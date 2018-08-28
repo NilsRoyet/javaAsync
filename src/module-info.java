@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author ROYET
+ *
+ */
+module javaAsync {
+}
