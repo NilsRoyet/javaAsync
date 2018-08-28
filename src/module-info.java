@@ -6,4 +6,5 @@
  *
  */
 module javaAsync {
+	exports com.tactfactory.asynchronism;
 }
