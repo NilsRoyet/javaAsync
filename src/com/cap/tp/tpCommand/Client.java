@@ -1,33 +1,27 @@
 package com.cap.tp.tpCommand;
 
-
-/**
- * 
- */
 public class Client {
-
 	public static void main(String[] args) {
 
-		InvokerRemoteControl control = new InvokerRemoteControl();
+		Invoker control = new Invoker();
 
-		ReceiverLight light = new ReceiverLight();
+		Receiver rcv = new Receiver();
 
-		Command lightsOn = new ConcretCommandLightOnCommand(light);
+		Command lightsOn = new ConcretCommand(rcv);
 
-		Command lightsOff = new ConcretCommandLightOffCommand(light);
+		Command lightsOff = new ConcretCommand(rcv);
 
-		// switch on
+		// switch on 
 
 		control.setCommand(lightsOn);
 
-		control.pressButton();
+		control.doAction();
 
 		// switch off
 
 		control.setCommand(lightsOff);
 
-		control.pressButton();
+		control.doAction();
 
 	}
-
 }

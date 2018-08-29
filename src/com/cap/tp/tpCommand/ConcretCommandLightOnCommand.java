@@ -4,7 +4,7 @@ package com.cap.tp.tpCommand;
 /**
  * 
  */
-public class ConcretCommandLightOnCommand implements Command {
+public class ConcretCommandLightOnCommand implements CommandTuto {
 
 	ReceiverLight light;
 

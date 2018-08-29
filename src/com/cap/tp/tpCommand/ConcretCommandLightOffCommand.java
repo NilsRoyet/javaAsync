@@ -1,7 +1,7 @@
 package com.cap.tp.tpCommand;
 //Concrete Command
 
-public class ConcretCommandLightOffCommand implements Command {
+public class ConcretCommandLightOffCommand implements CommandTuto {
 
 	// reference to the light
 

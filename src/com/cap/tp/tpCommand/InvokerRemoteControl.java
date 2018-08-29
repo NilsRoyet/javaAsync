@@ -3,9 +3,9 @@ package com.cap.tp.tpCommand;
 
 public class InvokerRemoteControl {
 
-	private Command command;
+	private CommandTuto command;
 
-	public void setCommand(Command command) {
+	public void setCommand(CommandTuto command) {
 
 		this.command = command;
 
