@@ -11,15 +11,22 @@ public class Client {
 		Command berlin = new ConcretCommandF2(rcv);	
 		Command rome = new ConcretCommandF3(rcv);
 
-
-		control.setCommand(paris);
-		control.doAction();
-
-		control.setCommand(berlin);
-		control.doAction();
+		MesRunnables mr = new MesRunnables();
 		
-		control.setCommand(rome);
-		control.doAction();
+		mr.addRunnable(paris);
+		mr.addRunnable(berlin);
+		mr.addRunnable(rome);
+		
+		mr.run();
+		
+//		control.setCommand(paris);
+//		control.doAction();
+//
+//		control.setCommand(berlin);
+//		control.doAction();
+//		
+//		control.setCommand(rome);
+//		control.doAction();
 
 	}
 }
