@@ -4,20 +4,8 @@ import java.util.*;
 /**
  * 
  */
-public abstract class Command {
+public interface Command {
 
-    /**
-     * Default constructor
-     */
-    public Command() {
-    }
-
-
-    /**
-     * 
-     */
-    public void Execute() {
-        // TODO implement here
-    }
+	public void execute();
 
 }

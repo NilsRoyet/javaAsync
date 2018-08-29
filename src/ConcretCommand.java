@@ -1,16 +1,10 @@
 
-import java.util.*;
+public class ConcretCommand implements Command {
 
-/**
- * 
- */
-public class ConcretCommand extends Command {
+	@Override
+	public void execute() {
+		// TODO Auto-generated method stub
 
-    /**
-     * Default constructor
-     */
-    public ConcretCommand() {
-    }
-
+	}
 
 }
