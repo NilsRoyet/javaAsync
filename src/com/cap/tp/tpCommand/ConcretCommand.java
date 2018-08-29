@@ -1,4 +1,4 @@
-
+package com.cap.tp.tpCommand;
 public class ConcretCommand implements Command {
 
 	@Override
