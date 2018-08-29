@@ -14,6 +14,7 @@ public class ConcretCommandLightOnCommand implements CommandTuto {
 
 	public void execute() {
 		light.switchOn();
+		System.out.println("SwitchOn");
 	}
 
 }

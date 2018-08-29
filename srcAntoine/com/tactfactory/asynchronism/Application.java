@@ -4,11 +4,15 @@ public class Application {
 
 	public static void main(String[] args) {
 
-		// thread1(2);
+		//thread1(2);
 		// thread2(20);
+<<<<<<< HEAD
 		thread3();
+=======
+		 //thread3();
+>>>>>>> 51affebbee739a224bbf7c9a70474687e5fa36b8
 
-		// CompletableFuturUse.futurExample1();
+		 CompletableFuturUse.futurExample1();
 		// CompletableFuturUse.futurExample2();
 		// CompletableFuturUse.futurExample3();
 		// System.out.println(CompletableFuturUse.futurExample4());
@@ -25,6 +29,7 @@ public class Application {
 
 	private static void thread3() {
 		AsynchronismClass c = new AsynchronismClass(10);
+		
 		c.addRunnable(new AsynchronismClassExposure() {
 			
 			@Override
@@ -37,6 +42,7 @@ public class Application {
 				return 5;
 			}
 		});
+		
 		c.addRunnable(new AsynchronismClassExposure() {
 
 			@Override
@@ -50,6 +56,7 @@ public class Application {
 				return c.getInt();
 			}
 		});
+		
 		c.start();
 	}
 
@@ -73,12 +80,12 @@ public class Application {
 				}
 			}
 		});
-		System.out.println("Start");
-		t1.start();
-		t2.start();
-		System.out.println("Run");
-		t1.run();
-		t2.run();
+//		System.out.println("Start");
+//		t1.start();
+//		t2.start();
+//		System.out.println("Run");
+//		t1.run();
+//		t2.run();
 
 //		 //S1 add
 //		 System.out.println("Run");

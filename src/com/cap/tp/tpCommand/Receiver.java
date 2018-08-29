@@ -1,15 +1,12 @@
 package com.cap.tp.tpCommand;
 
-
-
 /**
  * 
  */
 public class Receiver {
 
-	/**
-	 * Default constructor
-	 */
+	String ville="";
+
 	public Receiver() {
 	}
 
@@ -17,7 +14,19 @@ public class Receiver {
 	 * 
 	 */
 	public void Action() {
-		// TODO implement here
+
+	}
+
+	public void f1() {
+		ville="Paris";
+	}
+
+	public void f2() {
+		ville="Berlin";
+	}
+
+	public void f3() {
+		ville="Rome";
 	}
 
 }
