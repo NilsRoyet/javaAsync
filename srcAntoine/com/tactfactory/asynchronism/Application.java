@@ -6,7 +6,7 @@ public class Application {
 
 		// thread1(2);
 		// thread2(20);
-		// thread3();
+		thread3();
 
 		// CompletableFuturUse.futurExample1();
 		// CompletableFuturUse.futurExample2();
@@ -80,14 +80,14 @@ public class Application {
 		t1.run();
 		t2.run();
 
-		// //S1 add
-		// System.out.println("Start");
-		// t1.run();
-		// t2.run();
-		// //S2 add
-		// System.out.println("Start");
-		// t1.start();
-		// t2.start();
+//		 //S1 add
+//		 System.out.println("Run");
+//		 t1.run();
+//		 t2.run();
+//		 //S2 add
+//		 System.out.println("Start");
+//		 t1.start();
+//		 t2.start();
 	}
 
 	private static void thread2(int loop) {
