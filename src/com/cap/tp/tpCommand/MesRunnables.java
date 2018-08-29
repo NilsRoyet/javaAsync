@@ -3,9 +3,6 @@ package com.cap.tp.tpCommand;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.tactfactory.asynchronism.AsynchronismClassExposure;
-
-
 
 public class MesRunnables extends Thread implements Runnable{
 	private List<Command> runnables = new ArrayList<Command>();
