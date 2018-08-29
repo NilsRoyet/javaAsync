@@ -7,20 +7,18 @@ public class Client {
 
 		Receiver rcv = new Receiver();
 
-		Command lightsOn = new ConcretCommand(rcv);
+		Command paris = new ConcretCommandF1(rcv);
+		Command berlin = new ConcretCommandF2(rcv);	
+		Command rome = new ConcretCommandF3(rcv);
 
-		Command lightsOff = new ConcretCommand(rcv);
 
-		// switch on 
-
-		control.setCommand(lightsOn);
-
+		control.setCommand(paris);
 		control.doAction();
 
-		// switch off
-
-		control.setCommand(lightsOff);
-
+		control.setCommand(berlin);
+		control.doAction();
+		
+		control.setCommand(rome);
 		control.doAction();
 
 	}
